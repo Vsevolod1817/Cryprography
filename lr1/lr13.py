@@ -1,3 +1,6 @@
+# № 8 Реализовать шифрование и расшифрование AES в режиме CTR, для
+# реализации DES можно пользоваться методами библиотек.
+
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
 import os

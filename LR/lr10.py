@@ -49,7 +49,7 @@ print(f'\nЗакрытый ключ записывается в файл private
 private_key_path = "C:\Cryptography\LR\private_key.txt"
 with open(private_key_path, "w+") as file:
     file.write(f"({pri_key[0]}, {pri_key[1]})")
-# print(f"private key: {private_key}")
+# print(f"private key: {pri_key}")
 msg = input("Сообщение: ")
 # Шифрование
 cipher_text = Encrypt(msg, pub_key)

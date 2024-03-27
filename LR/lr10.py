@@ -54,7 +54,7 @@ print(f'public key: {public_key}')
 # Запись закрытого ключа в файл
 private_key_path = "C:\Cryptography\LR\private_key.txt"
 with open(private_key_path, "w+") as file:
-    file.write(f"{private_key[0]}, {private_key[1]}")
+    file.write(f"({private_key[0]}, {private_key[1]})")
 
 # print(f"private key: {private_key}")
 

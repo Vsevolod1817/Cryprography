@@ -52,7 +52,7 @@ public_key, private_key = generate_rsa_keys()
 print(f'public key: {public_key}')
 
 # Запись закрытого ключа в файл
-private_key_path = "C:/Users/honor/OneDrive/Рабочий стол/Study/Crypto/LR/private_key.txt"
+private_key_path = "C:\Cryprography\LR\private_key.txt"
 with open(private_key_path, "w+") as file:
     file.write(f"{private_key[0]}, {private_key[1]}")
 

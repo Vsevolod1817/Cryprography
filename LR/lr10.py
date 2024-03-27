@@ -8,7 +8,7 @@ from sympy import randprime, gcd
 
 # Функция для генерации ключей RSA
 def Generation():
-    # Генерируем два простых числа (в реальности должны быть гораздо больше)
+    # Генерируем два простых числа
     p = randprime(100, 1000)
     q = randprime(100, 1000)
     while q == p:
@@ -41,8 +41,9 @@ def Encrypt(message, public_key):
 
 # Генерация ключей
 pub_key, pri_key = Generation()
-# Показываем открытый ключ пользователю
+# Показываем открытый ключ
 print(f'Публичный ключ: {pub_key}')
+# Рассказываем о закрытом ключе
 print(f'\nЗакрытый ключ записывается в файл private_key.txt')
 # Запись закрытого ключа в файл
 private_key_path = "C:\Cryptography\LR\private_key.txt"
